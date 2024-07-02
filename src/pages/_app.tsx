@@ -34,6 +34,7 @@ export default function App({Component, pageProps}: AppPropsWithLayout) {
 				<title>Quản lý trạm cân</title>
 				<meta name='description' content='Quản lý trạm cân' />
 				<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale = 1.0' />
+				<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests' />
 			</Head>
 			<AppProvider pageProps={pageProps}>{getLayout(<Component {...pageProps} />)}</AppProvider>
 		</Fragment>
