@@ -1,0 +1,85 @@
+$bg-input: #fff;
+$bg-focus-input: #fff;
+$bg-btn: #2367ed;
+$bg-disable-input: #f1f4f9;
+
+$color-btn: #fff;
+$color-placeholder: #b4b5bc;
+$color-clean: #29303c;
+$color-focus: #2367ed;
+$color-done: #2cae39;
+$color-error: #e93a3a;
+
+$border-input: #e1e5ed;
+$border-disable-input: #e1e5ed;
+
+$border-radius: 2px;
+$padding-input: 8px 20px;
+$font-size-input: 16px;
+
+.quality {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: 5fr 3fr 2fr;
+	gap: 16px;
+
+	& + & {
+		margin-top: 16px;
+	}
+}
+
+.label {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+
+.box_control {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.input_price {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+
+	.input {
+		cursor: pointer;
+		width: 18px;
+		height: 18px;
+	}
+
+	.label_check_box {
+		cursor: pointer;
+		user-select: none;
+		display: block;
+		color: #2f3643;
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+
+.btn_delete {
+	width: 42px;
+	height: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2px;
+	background: #ff5f6d;
+	cursor: pointer;
+	user-select: none;
+	color: #fff;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.9);
+	}
+}

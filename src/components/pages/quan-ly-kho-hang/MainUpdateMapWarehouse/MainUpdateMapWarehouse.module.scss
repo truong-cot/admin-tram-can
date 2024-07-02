@@ -1,0 +1,52 @@
+.header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.title {
+	color: var(--dark-2);
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.right {
+	display: flex;
+	gap: 12px;
+}
+
+.main {
+	margin-top: 32px;
+}
+
+.gird {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	height: 100vmin;
+}
+
+.gird_item {
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: 1px solid #c2c7c9;
+	background: #fff;
+	cursor: pointer;
+	user-select: none;
+	transform: 0.2s;
+
+	&:hover {
+		background: rgba(45, 116, 255, 0.3);
+	}
+
+	&.active {
+		background: rgba(45, 116, 255, 0.3);
+	}
+}
+
+.btn {
+	margin-bottom: -6px;
+	z-index: -1;
+}
